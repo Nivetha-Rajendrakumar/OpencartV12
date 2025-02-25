@@ -1,0 +1,4 @@
+cd C:\project\eclipse-workspace\OpencartV12
+mvn testC:\project\eclipse-workspace\OpencartV12
+Nivetha-Rajendrakumar
+Iamtester@1

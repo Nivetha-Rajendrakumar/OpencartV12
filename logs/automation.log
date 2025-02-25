@@ -1,0 +1,34 @@
+10:53:00:383 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - clicking Register
+%10:53:00:802 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - providing customer details
+%10:53:04:68 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - submitting response
+%10:53:05:403 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
+%10:53:05:403 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - test completed
+%10:40:22:409 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\project\eclipse-workspace\OpencartV12\Master.xml"
+%10:40:35:230 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\project\eclipse-workspace\OpencartV12\Master.xml
+
+%07:30:21:313 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\project\eclipse-workspace\OpencartV12\Master.xml"
+%07:31:46:739 [main] INFO  testCases.TC001_AccountRegistrationTest - *** test started***
+%07:31:58:457 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking My Account
+%07:32:00:667 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking Register
+%07:32:03:388 [main] INFO  testCases.TC001_AccountRegistrationTest - providing customer details
+%07:32:09:656 [main] INFO  testCases.TC001_AccountRegistrationTest - submitting response
+%07:32:13:421 [main] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
+%07:32:13:455 [main] INFO  testCases.TC001_AccountRegistrationTest - test completed
+%07:54:12:620 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\project\eclipse-workspace\OpencartV12\Master.xml"
+%07:54:48:962 [main] INFO  testCases.TC001_AccountRegistrationTest - *** test started***
+%07:54:52:741 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking My Account
+%07:54:54:803 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking Register
+%07:54:54:824 [main] INFO  testCases.TC001_AccountRegistrationTest - providing customer details
+%07:55:00:695 [main] INFO  testCases.TC001_AccountRegistrationTest - submitting response
+%07:55:04:547 [main] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
+%07:55:04:562 [main] INFO  testCases.TC001_AccountRegistrationTest - test completed
+%08:19:03:722 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\project\eclipse-workspace\OpencartV12\Master.xml"
+%08:19:24:188 [main] INFO  testCases.TC001_AccountRegistrationTest - *** test started***
+%08:19:24:732 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking My Account
+%08:19:26:453 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking Register
+%08:19:26:468 [main] INFO  testCases.TC001_AccountRegistrationTest - providing customer details
+%08:19:32:810 [main] INFO  testCases.TC001_AccountRegistrationTest - submitting response
+%08:19:34:528 [main] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
+%08:19:34:534 [main] INFO  testCases.TC001_AccountRegistrationTest - test completed
+%
