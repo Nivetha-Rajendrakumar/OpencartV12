@@ -8,7 +8,13 @@ It is designed to help test various features of Opencart in User Interface.
 - Java 8 or above
 - Maven
 - Selenium WebDriver
+- Any IDE (eg., IntelliJ, Eclipse)
+
+## Framework
 - TestNG
+- Page Object Model
+- Hybrid driven
+- Data driven
 
 ## Installation
 
