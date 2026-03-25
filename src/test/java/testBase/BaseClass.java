@@ -3,12 +3,13 @@ package testBase;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
+import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,7 +33,8 @@ public class BaseClass {
     public Properties p;
     
 
-	@SuppressWarnings("deprecation")
+	
+	
 	@BeforeClass(groups= {"Sanity", "Regression", "Master","Datadriven"})
 	@Parameters ({"os", "browser"})
 	public void setup(String os, String br) throws IOException {
@@ -41,8 +43,8 @@ public class BaseClass {
 		FileReader file = new FileReader("./src//test//resources//config.properties");
 		p = new Properties();
 		p.load(file);
-		
-		if(p.getProperty("execution_environment").equalsIgnoreCase("remote"))//for grid
+		//for grid if  execution_environment in properties file is remote execute selenium grid else normal execution
+		if(p.getProperty("execution_environment").equalsIgnoreCase("remote"))
 		{
 			DesiredCapabilities capability = new DesiredCapabilities();
 			
@@ -65,7 +67,7 @@ public class BaseClass {
 			default : System.out.println("no match");return;
 			}
 			
-		driver = new RemoteWebDriver(new URL("http://192.168.1.6:4444/wd/hub"),capability);
+			driver = new RemoteWebDriver(URI.create("http://192.168.1.6:4444/wd/hub").toURL(), capability);
 		}
 		
 		if(p.getProperty("execution_environment").equalsIgnoreCase("local"))
@@ -90,33 +92,38 @@ public class BaseClass {
 		driver.quit();
 		
 	}
-	 public String ramdomString() {
-		 @SuppressWarnings("deprecation")
-		String generatedString = RandomStringUtils.randomAlphabetic(5);
+	
+	
+	 public String randomString() {
+		 
+		String generatedString = RandomStringUtils.secure().nextAlphabetic(5);
 		 return generatedString;
 	 }
+	 
+	 
 	 public String randomNumber() {
-		 @SuppressWarnings("deprecation")
-		String generatedNumber = RandomStringUtils.randomNumeric(7);
+		
+		String generatedNumber = RandomStringUtils.secure().nextNumeric(7);
 		 return generatedNumber;
 	 }
-	 public String randomAlphaNumeric() {
-		 @SuppressWarnings("deprecation")
-		String generatedAlhaNumeric = RandomStringUtils.randomAlphanumeric(9);
+	 
+	 
+	 public String randomAlphaNumeric() { 
+		String generatedAlhaNumeric = RandomStringUtils.secure().nextAlphanumeric(9);
 		 return generatedAlhaNumeric;
-		 //or
-		 // String generatedString = RandomStringUtils.randomAlphabetic(3);
-		 //String generatedNumber = RandomStringUtils.randomNumeric(3);
-		 //return generatedString+"@"+generatedNumber;
+		
 	 }
 	 
 	 public String captureScreen(String tname) throws IOException{
+		 //Date d=new Date();
+		 //SimpleDateFormat s=new SimpleDateFormat("yyyymmdd");
+		 //String timestamp=s.format(d);
 		 String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		 TakesScreenshot takesScreenshot = (TakesScreenshot)driver;
 		 File sourceFile=takesScreenshot.getScreenshotAs(OutputType.FILE);
-		 String targetFilePath = System.getProperty("user.dir")+"\\screenshotd\\"+tname+"_"+timestamp+".png";
+		 String targetFilePath = System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+timestamp+".png";
 		File targetFile = new File(targetFilePath);
-		 sourceFile.renameTo(targetFile);
+		 FileUtils.copyFile(sourceFile, targetFile);
 		 return targetFilePath;
 	 }
 	 

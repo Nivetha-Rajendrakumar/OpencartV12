@@ -28,6 +28,12 @@ WebElement txtPwd;
 @FindBy(id="input-confirm")
 WebElement txtConfirmPwd;
 
+@FindBy(xpath="//input[@value='1' and @name ='newsletter']")
+WebElement NewsletterYes;
+
+@FindBy(xpath="//input[@value='0' and @name ='newsletter']")
+WebElement NewsletterNo;
+
 @FindBy(xpath="//input[@name='agree']")
 WebElement chkPolicy;
 
@@ -60,7 +66,14 @@ public void setPassword(String pwd) {
 public void setConfirmPassword(String pwd) {
 	txtConfirmPwd.sendKeys(pwd);
 }
-
+public void clickNewsletterYes() {
+	NewsletterYes.click();
+	
+}
+public void clickNewsletterNo() {
+	NewsletterNo.click();
+	
+}
 public void setPolicy() {
 	chkPolicy.click();
 }

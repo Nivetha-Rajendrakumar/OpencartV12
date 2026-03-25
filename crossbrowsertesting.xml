@@ -22,7 +22,7 @@
   </test> <!-- Test -->
 
 
-<!-- 
+
 
   <test name="TestFirefox">
   <parameter name="os" value = "windows"/>
@@ -31,5 +31,5 @@
       <class name="testCases.TC001_AccountRegistrationTest"/>
     </classes>
   
-  </test> <Test -->
+  </test> 
 </suite> <!-- Suite -->

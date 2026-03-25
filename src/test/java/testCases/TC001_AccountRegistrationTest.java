@@ -23,10 +23,10 @@ public class TC001_AccountRegistrationTest extends BaseClass{
 		
 		AccoutRegistrationPage rp = new AccoutRegistrationPage(driver);
 		
-		logger.info("providing customer details");
-		rp.setFirstName(ramdomString().toUpperCase());
-		rp.setLastName(ramdomString().toUpperCase());
-		rp.setEmail(ramdomString()+"@gmail.com");
+		logger.info("providing mandratory customer details");
+		rp.setFirstName(randomString().toUpperCase());
+		rp.setLastName(randomString().toUpperCase());
+		rp.setEmail(randomString()+"@gmail.com");
 		rp.setTelephone(randomNumber());
 		String passwd = randomAlphaNumeric();
 		rp.setPassword(passwd);

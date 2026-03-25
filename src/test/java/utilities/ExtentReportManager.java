@@ -25,19 +25,24 @@ public class ExtentReportManager implements ITestListener {
 	    String repName;
 
 	    // Initialize the ExtentReports object
-	    public  void onStart(ITestContext testContext) {//testcontext hold which test method currently is executing
+	    public  void onStart(ITestContext testContext) {
+	    	
+	    	//testcontext hold which test method currently is executing
 	        // Date Format to append current date/time to the report file name
 	    	/*SimpleDateFormat df =new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 	    	Date dt = new Date();
 	    	String timeStamp = df.format(dt);*/ // this code can be wrriten in simgle line as below
 	    	
-	        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); // getting timestamp as year month day hour minute sec
-	        repName = "Test - Report-" + timeStamp + ".html"; // add timestamp in the middle of report name i.e Test-Report-2025.02.21.01.10.22.html
-	        sparkReporter = new ExtentSparkReporter(".\\reports\\"+repName);// providing the location of report
+	        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+	        // getting timestamp as year month day hour minute sec
+	        repName = "Test-Report-" + timeStamp + ".html";                  
+	        // add timestamp in the middle of report name i.e Test-Report-2025.02.21.01.10.22.html
+	        sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir")+".\\reports\\" + repName);
+	        // providing the location of report
 	        
 	        
-	        sparkReporter.config().setDocumentTitle("opencart Automation test case"); // title for report
-	        sparkReporter.config().setReportName("opencart functional testing");// name of report
+	        sparkReporter.config().setDocumentTitle("Opencart Automation test case"); // title for report
+	        sparkReporter.config().setReportName("Opencart functional testing");// name of report
 	        sparkReporter.config().setTheme(Theme.DARK);
 	        
 	        
@@ -46,14 +51,15 @@ public class ExtentReportManager implements ITestListener {
 	        extent.setSystemInfo("Application", "opencart");
 	        extent.setSystemInfo("Module","Admin");
 	        extent.setSystemInfo("Sub Module","Customer");
-	        extent.setSystemInfo("Username",System.getProperty("user.name"));
+	        extent.setSystemInfo("User name",System.getProperty("user.name"));
 	        extent.setSystemInfo("Environment","QA");
+	        
 	        String os = testContext.getCurrentXmlTest().getParameter("os");
 	        extent.setSystemInfo("Operating System" , os);
-	        String browser = testContext.getCurrentXmlTest().getParameter("os");
+	        String browser = testContext.getCurrentXmlTest().getParameter("browser");
 	        extent.setSystemInfo("Browser" , browser);
 	        
-	        List<String > includedGroups = testContext.getCurrentXmlTest().getIncludedGroups();
+	        List<String> includedGroups = testContext.getCurrentXmlTest().getIncludedGroups();
 	        if(!includedGroups.isEmpty()) {
 	        	extent.setSystemInfo("Groups", includedGroups.toString());
 	        }
@@ -63,14 +69,14 @@ public class ExtentReportManager implements ITestListener {
 	    public  void onTestSuccess(ITestResult result) {
 	        test = extent.createTest(result.getTestClass().getName());
 	        test.assignCategory(result.getMethod().getGroups());
-	        test.log(Status.PASS, result.getName()+"got successfully executed");
+	        test.log(Status.PASS, result.getName()+" got successfully executed");
 	    }
 
 	  
 	    public void onTestFailure(ITestResult result) {
 	        test=extent.createTest(result.getTestClass().getName());
 	        test.assignCategory(result.getMethod().getGroups());
-	        test.log(Status.FAIL, result.getName()+"got failed");
+	        test.log(Status.FAIL, result.getName()+" got failed");
 	        test.log(Status.INFO, result.getThrowable().getMessage());
 	        try {
 	        	String impPath = new BaseClass().captureScreen(result.getName());  
@@ -91,7 +97,7 @@ public class ExtentReportManager implements ITestListener {
 	        
 	    }
 	    
-	    public void onFinish(ITestResult result) {
+	    public void onFinish(ITestContext context) {
 	    	extent.flush(); // this is enough for finish task
 	    	//to open the report automaticallly after completing the test we use below code
 	    	

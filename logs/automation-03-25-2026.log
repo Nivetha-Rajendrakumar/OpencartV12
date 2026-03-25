@@ -1,0 +1,85 @@
+00:27:07:099 [main] INFO  testCases.TC001_AccountRegistrationTest - submitting response
+00:27:09:587 [main] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
+00:27:09:605 [main] INFO  testCases.TC001_AccountRegistrationTest - test completed
+00:34:43:651 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+00:35:32:219 [main] INFO  testCases.TC002_AccountRegistrationTest - test started
+00:35:32:393 [main] INFO  testCases.TC002_AccountRegistrationTest - click on MyAccount
+00:35:39:652 [main] INFO  testCases.TC002_AccountRegistrationTest - Click on Register
+00:35:41:163 [main] INFO  testCases.TC002_AccountRegistrationTest - provide all the fields
+00:35:45:232 [main] INFO  testCases.TC002_AccountRegistrationTest - Get confirmation message and compare with actual message
+00:38:32:325 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+00:38:50:531 [main] INFO  testCases.TC002_AccountRegistrationTest - test started
+00:38:50:556 [main] INFO  testCases.TC002_AccountRegistrationTest - click on MyAccount
+00:38:50:693 [main] INFO  testCases.TC002_AccountRegistrationTest - Click on Register
+00:38:58:685 [main] INFO  testCases.TC002_AccountRegistrationTest - provide all the fields
+00:39:14:018 [main] INFO  testCases.TC002_AccountRegistrationTest - Get confirmation message and compare with actual message
+09:18:43:196 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\grouping.xml
+
+09:21:22:771 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\grouping.xml
+
+07:47:15:429 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+07:50:58:592 [main] INFO  testCases.TC002_AccountLoginTest - ** starting test***
+07:51:07:098 [main] INFO  testCases.TC002_AccountLoginTest - ** providing email id***
+07:51:08:656 [main] INFO  testCases.TC002_AccountLoginTest - providing password
+08:08:26:337 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:35:21:775 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:42:56:470 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:43:37:866 [main] INFO  testCases.TC002_AccountLoginTest - ** starting test***
+21:43:42:758 [main] INFO  testCases.TC002_AccountLoginTest - ** providing email id***
+21:43:43:913 [main] INFO  testCases.TC002_AccountLoginTest - providing password
+21:49:08:974 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:54:42:548 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:55:38:856 [main] INFO  testCases.TC002_AccountLoginTest - ** starting test***
+21:55:42:103 [main] INFO  testCases.TC002_AccountLoginTest - ** providing email id***
+21:55:43:368 [main] INFO  testCases.TC002_AccountLoginTest - providing password
+22:13:03:161 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+22:23:50:390 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+22:25:00:387 [main] INFO  testCases.TC002_AccountLoginTest - ** starting test***
+22:25:07:602 [main] INFO  testCases.TC002_AccountLoginTest - ** providing email id***
+22:25:09:387 [main] INFO  testCases.TC002_AccountLoginTest - providing password
+22:25:12:633 [main] INFO  testCases.TC002_AccountLoginTest - test completed
+21:36:03:411 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:43:20:006 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:43:50:277 [main] INFO  testCases.TC007_CheckoutTest - starting test
+22:02:50:607 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+22:07:07:371 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+22:11:21:677 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+22:16:45:012 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+22:17:17:493 [main] INFO  testCases.TC007_CheckoutTest - starting test
+22:20:11:034 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+

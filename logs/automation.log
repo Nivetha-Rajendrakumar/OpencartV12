@@ -1,34 +1,56 @@
-10:53:00:383 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - clicking Register
-%10:53:00:802 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - providing customer details
-%10:53:04:68 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - submitting response
-%10:53:05:403 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
-%10:53:05:403 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - test completed
-%10:40:22:409 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\project\eclipse-workspace\OpencartV12\Master.xml"
-%10:40:35:230 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\project\eclipse-workspace\OpencartV12\Master.xml
+21:01:25:836 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
 
-%07:30:21:313 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\project\eclipse-workspace\OpencartV12\Master.xml"
-%07:31:46:739 [main] INFO  testCases.TC001_AccountRegistrationTest - *** test started***
-%07:31:58:457 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking My Account
-%07:32:00:667 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking Register
-%07:32:03:388 [main] INFO  testCases.TC001_AccountRegistrationTest - providing customer details
-%07:32:09:656 [main] INFO  testCases.TC001_AccountRegistrationTest - submitting response
-%07:32:13:421 [main] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
-%07:32:13:455 [main] INFO  testCases.TC001_AccountRegistrationTest - test completed
-%07:54:12:620 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\project\eclipse-workspace\OpencartV12\Master.xml"
-%07:54:48:962 [main] INFO  testCases.TC001_AccountRegistrationTest - *** test started***
-%07:54:52:741 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking My Account
-%07:54:54:803 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking Register
-%07:54:54:824 [main] INFO  testCases.TC001_AccountRegistrationTest - providing customer details
-%07:55:00:695 [main] INFO  testCases.TC001_AccountRegistrationTest - submitting response
-%07:55:04:547 [main] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
-%07:55:04:562 [main] INFO  testCases.TC001_AccountRegistrationTest - test completed
-%08:19:03:722 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\project\eclipse-workspace\OpencartV12\Master.xml"
-%08:19:24:188 [main] INFO  testCases.TC001_AccountRegistrationTest - *** test started***
-%08:19:24:732 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking My Account
-%08:19:26:453 [main] INFO  testCases.TC001_AccountRegistrationTest - clicking Register
-%08:19:26:468 [main] INFO  testCases.TC001_AccountRegistrationTest - providing customer details
-%08:19:32:810 [main] INFO  testCases.TC001_AccountRegistrationTest - submitting response
-%08:19:34:528 [main] INFO  testCases.TC001_AccountRegistrationTest - validating confirmation message
-%08:19:34:534 [main] INFO  testCases.TC001_AccountRegistrationTest - test completed
-%
+21:02:21:985 [main] INFO  testCases.TC007_CheckoutTest - starting test
+21:06:20:358 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:07:07:546 [main] INFO  testCases.TC007_CheckoutTest - starting test
+21:08:55:976 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:09:25:558 [main] INFO  testCases.TC007_CheckoutTest - starting test
+21:29:28:448 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:32:57:400 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:33:45:676 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:35:41:477 [main] ERROR org.testng.reporters.jq.Main - C:\Users\Nivi\eclipse-workspace\Opencart_Automation\test-output\jquery-3.6.0.min.js: The process cannot access the file because it is being used by another process
+java.nio.file.FileSystemException: C:\Users\Nivi\eclipse-workspace\Opencart_Automation\test-output\jquery-3.6.0.min.js: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273) ~[?:?]
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109) ~[?:?]
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.base/java.nio.file.Files.copy(Files.java:3128) ~[?:?]
+	at org.testng.reporters.jq.Main.generateReport(Main.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.generateReports(TestNG.java:1160) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1085) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+21:36:15:319 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:36:50:750 [main] INFO  testCases.TC007_CheckoutTest - starting test
+21:39:53:602 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:40:10:652 [main] INFO  testCases.TC007_CheckoutTest - starting test
+21:41:39:771 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:41:55:683 [main] INFO  testCases.TC007_CheckoutTest - starting test
+21:42:43:878 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:42:53:721 [main] INFO  testCases.TC007_CheckoutTest - starting test
+21:44:56:349 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Nivi\eclipse-workspace\Opencart_Automation\Master.xml
+
+21:45:07:549 [main] INFO  testCases.TC007_CheckoutTest - starting test

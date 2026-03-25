@@ -13,7 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtilities {
-	public  FileInputStream fi;
+	public FileInputStream fi;
 	public FileOutputStream fo;
 	public XSSFWorkbook wb;
 	public XSSFSheet ws;
@@ -33,7 +33,7 @@ public class ExcelUtilities {
 	{
 		fi = new FileInputStream(path);
 		wb = new XSSFWorkbook(fi);
-		ws = wb.getSheet("sheet1");
+		ws = wb.getSheet(sheetName);
 		int rowCount = ws.getLastRowNum();
 		wb.close();
 		fi.close();
@@ -46,7 +46,7 @@ public int getcellCount(String sheetName, int rowNum) throws IOException
 	{
 		fi = new FileInputStream(path);
 		wb = new XSSFWorkbook(fi);
-		ws = wb.getSheet("sheet1");
+		ws = wb.getSheet(sheetName);
 		row = ws.getRow(rowNum);
 		int cellCount = row.getLastCellNum();
 		wb.close();

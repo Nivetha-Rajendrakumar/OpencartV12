@@ -11,9 +11,12 @@ public class AccoutLoginPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@FindBy(xpath="//input[@id='input-email']") WebElement txtloginEmail;
-	@FindBy(xpath="//input[@id='input-password']") WebElement txtloginpwd;
-	@FindBy(xpath="//input[@value='Login']") WebElement btnLogin;
+	@FindBy(xpath="//input[@id='input-email']") 
+	private WebElement txtloginEmail;
+	@FindBy(xpath="//input[@id='input-password']")
+	private WebElement txtloginpwd;
+	@FindBy(xpath="//input[@value='Login']")
+	private WebElement btnLogin;
 	
 	public void putEmail(String email) {
 		txtloginEmail.sendKeys(email);

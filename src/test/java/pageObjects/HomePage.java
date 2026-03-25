@@ -16,7 +16,19 @@ public class HomePage extends BasePage {
 	WebElement lnkRegister;
 @FindBy(xpath="//a[normalize-space()='Login']")
 WebElement lnkLogin;
+@FindBy(xpath="//a[normalize-space()='Desktops' and @class='dropdown-toggle']")
+WebElement desktoplink;
+@FindBy(xpath="//a[normalize-space()='Show AllDesktops']")
+WebElement showadesktop;
 
+public void clkDesktop() {
+	
+	desktoplink.click();
+}
+public void clkShowdesktopt() {
+	
+	showadesktop.click();
+}
 public void clkMyAccount() {
 	
 	lnkAccount.click();

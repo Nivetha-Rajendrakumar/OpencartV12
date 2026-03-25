@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.MyAccountPage;
 import pageObjects.AccoutLoginPage;
+import utilities.Environment_Variable;
 
 public class TC002_AccountLoginTest extends BaseClass {
  
@@ -23,9 +24,9 @@ public class TC002_AccountLoginTest extends BaseClass {
 		
 		AccoutLoginPage lp = new AccoutLoginPage(driver);
 		logger. info("** providing email id***");
-		lp.putEmail(p.getProperty("email"));
+		lp.putEmail(Environment_Variable.getUsername());
 		logger. info("providing password");
-		lp.putPwd(p.getProperty("password"));
+		lp.putPwd(Environment_Variable.getPassword());
 		lp.clickLogin();
 		
 		MyAccountPage ap = new MyAccountPage(driver);

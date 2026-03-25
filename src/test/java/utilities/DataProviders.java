@@ -13,9 +13,10 @@ public class DataProviders {
 		int totalrows = xlutil.getRowCount("Sheet1");
 		int totalcell = xlutil.getcellCount("Sheet1", totalrows);
 		String loginData[][] = new String[totalrows][totalcell];
-		for(int i=1;i<totalrows;i++)
+		for(int i=1;i<totalrows;i++)//row starts from 1 because we do not need header row
 			for(int j=0;j<totalcell;j++) {
 				loginData[i-1][j] = xlutil.getcellData("Sheet1", i, j);
+				//here loginData[i-1][j] because we do not want to waste 0th position of i in new array
 			}
 		return loginData;
 		

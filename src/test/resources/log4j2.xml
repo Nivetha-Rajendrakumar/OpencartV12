@@ -8,11 +8,11 @@
     <!-- Console Appender: Logs to the console -->
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss:SS} [%t] %-5level %logger{36} - %msg%n%"/>
+            <PatternLayout pattern="%d{HH:mm:ss:SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
         
         <RollingFile name="File" fileName="${basePath}/automation.log" filePattern="${basePath}/automation-%d{MM-dd-yyyy}.log">
-            <PatternLayout pattern="%d{HH:mm:ss:SS} [%t] %-5level %logger{36} - %msg%n%"/>
+            <PatternLayout pattern="%d{HH:mm:ss:SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <!-- Policies: Conditions for rolling the log file -->
            
                 <!-- Roll over the log file when it reaches 10MB -->
@@ -23,8 +23,8 @@
 
     <!-- Root Logger: Configures the default logging level and attaches the appenders -->
     <Loggers>
-        <Root level="debug"> <!-- all< Trace< debug< info< warn< error< fatal< off -->
-           <!---<AppenderRef ref="Console"/> -->
+        <Root level="Info"> <!-- all< Trace< debug< info< warn< error< fatal< off -->
+          <!--- <AppenderRef ref="Console"/> -->
             <AppenderRef ref="File"/> 
         </Root>
     </Loggers>
